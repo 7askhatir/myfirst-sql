@@ -1,28 +1,18 @@
 use khalid;
 /* Creation des utilisateurs */
 
--- Creates the login askhatir with password 'Admin123'.  
-CREATE LOGIN askhatir   
-    WITH PASSWORD = 'Admin123';  
-GO  
-
--- Creates a database user for the login created above.  
-CREATE USER askhatir FOR LOGIN askhatir;  
-GO  
- 
-GRANT all TO askhatir;  
+-- Creates the login askhatir with password 'abc-123'.  
+CREATE USER 'askhatir'@'localhost' IDENTIFIED BY 'abc-123';
+GRANT ALL PRIVILEGES ON * . * TO 'askhatir'@'localhost';
+FLUSH PRIVILEGES;  
 GO 
 
--- Creates the login Utilisateur with password 'Utilisateur123'.  
-CREATE LOGIN Utilisateur   
-    WITH PASSWORD = 'Utilisateur123';  
-GO  
-
--- Creates a database user for the login created above.  
-CREATE USER Utilisateur FOR LOGIN Utilisateur;  
-GO  
- 
-GRANT select,insert to Utilisateur ;  
+-- Creates the login Utilisateur1 with password 'utile-123'.  
+CREATE USER 'utilisateur1'@'localhost' IDENTIFIED BY 'utile-123';
+GRANT INSERT,SELECT ON khalid.tRecette TO ‘utilisateur1’@'localhost’;
+-- Creates the login Utilisateur2 with password 'utile2-123'
+CREATE USER 'utilisateur2'@'localhost' IDENTIFIED BY 'utile2-123';
+GRANT INSERT,SELECT ON khalid.Recette TO ‘utilisateur2’@'localhost’;
 GO 
 
 -- Insertion --
