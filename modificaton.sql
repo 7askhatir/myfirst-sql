@@ -19,33 +19,33 @@ GRANT INSERT,SELECT ON khalid.Rangement TO ‘utilisateur2’@'localhost’;
 
 -- Insert Into Table Recette --
 
-insert into Recette values (1,'Artichauts poivrade','des petits artichauts violets','25500 Kcal','Facile',4) 
-insert into Recette values (2,'Avocat au thon','avocat, thon, herbes hachées et mayonnaise','7000 Kcal','Moyenne',2) 
-insert into Recette values (3,'Coleslaw Breton','salade de chou et carotte','37500 Kcal','Facile',5) 
+insert into Recette values (1,'Artichauts poivrade','des petits artichauts violets','25500 Kcal','Facile',4) ;
+insert into Recette values (2,'Avocat au thon','avocat, thon, herbes hachées et mayonnaise','7000 Kcal','Moyenne',2) ;
+insert into Recette values (3,'Coleslaw Breton','salade de chou et carotte','37500 Kcal','Facile',5) ;
 
 -- Insert Into Table Rangement --
 
-insert into Rangement values (1,'Rangement1')
+insert into Rangement values (1,'Rangement1');
 
 -- Insert Into Table Ingredient --
 
-insert into Ingredient values (1,'artichauts violets','2000 Lcal')
+insert into Ingredient values (1,'artichauts violets','2000 Lcal');
 
 -- Insert Into Table Produit --
 
-insert into Produit values (1,1,1,'salade avec des herbes',2,200.49)
+insert into Produit values (1,1,1,'salade avec des herbes',2,200.49);
 
 -- Insert Into Table Association --
 
-insert into Association_3 values (1,1)
-insert into Association_3 values (1,2)
+insert into Association_3 values (1,1);
+insert into Association_3 values (1,2);
 
 -- Select From All tables --
 
-select * from Recette
-select * from Rangement
-select * from Ingredient
-select * from Produit
+select * from Recette;
+select * from Rangement;
+select * from Ingredient;
+select * from Produit;
 
 -- Update -- 
 
