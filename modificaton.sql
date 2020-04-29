@@ -5,7 +5,7 @@ use khalid;
 CREATE USER 'askhatir'@'localhost' IDENTIFIED BY 'abc-123';
 GRANT ALL PRIVILEGES ON * . * TO 'askhatir'@'localhost';
 FLUSH PRIVILEGES;  
-GO 
+
 
 -- Creates the login Utilisateur1 with password 'utile-123'.  
 CREATE USER 'utilisateur1'@'localhost' IDENTIFIED BY 'utile-123';
@@ -13,7 +13,7 @@ GRANT INSERT,SELECT ON khalid.Recette TO ‘utilisateur1’@'localhost’;
 -- Creates the login Utilisateur2 with password 'utile2-123'
 CREATE USER 'utilisateur2'@'localhost' IDENTIFIED BY 'utile2-123';
 GRANT INSERT,SELECT ON khalid.Rangement TO ‘utilisateur2’@'localhost’;
-GO 
+
 
 -- Insertion --
 
