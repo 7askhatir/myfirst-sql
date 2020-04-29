@@ -1,7 +1,7 @@
 /*Creation Base De Donnée*/
 
-Create database GRecette ;
-use GRecette;
+Create database khalid ;
+use khalid;
 
 
 
